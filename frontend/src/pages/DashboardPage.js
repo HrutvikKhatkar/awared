@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Doughnut, Bar } from "react-chartjs-2";
 import "./Dashboard.css";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement } from "chart.js";
+import { Link } from "react-router-dom";
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 
@@ -48,7 +49,13 @@ const DashboardPage = () => {
 
   return (
     <div className="dashboard">
+      <div className="dash-container">
       <h1>Awareness Dashboard</h1>
+      <Link to="/">
+           <button className="dash-back-button">Back</button>
+        </Link>
+      </div>
+      
 
       {/* Doughnut Chart */}
       <div className="chart-container">

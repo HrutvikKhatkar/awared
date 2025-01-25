@@ -72,7 +72,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Be Aware</h1>
+      <div className="dash-container">
+        <h1>Be Aware</h1>
+        <Link to="/dashboard">
+           <button className="dashboard-button">Dashboard</button>
+        </Link>
+      </div>
       <p>
         Addressing the environmental and health risks of paper cups through
         innovation.
@@ -98,6 +103,7 @@ const Home = () => {
         onChange={handleSearch}
         className="search-bar"
       />
+      
 
       {/* Blog List */}
       <div className="blog-list">
