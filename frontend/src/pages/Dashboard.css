@@ -1,0 +1,92 @@
+/* Dashboard.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Chart Containers */
+.chart-container {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Container */
+.map-container {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.map-point {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.map-point.aware {
+  background-color: #4caf50;
+}
+
+.map-point.unaware {
+  background-color: #f44336;
+}
+
+.map-point:hover {
+  transform: scale(1.1);
+}
+
+.map-tooltip {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.tooltip-content {
+  position: absolute;
+  top: 120%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Chart.js Styling */
+canvas {
+  max-width: 100%;
+  margin: 0 auto;
+}
