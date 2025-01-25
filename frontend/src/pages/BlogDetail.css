@@ -17,3 +17,21 @@
     text-decoration: underline;
   }
   
+
+  .dash-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items to opposite ends */
+    align-items: center; /* Vertically align items */
+    padding: 10px; /* Optional: Adjust spacing */
+  }
+  .dashboard-button{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

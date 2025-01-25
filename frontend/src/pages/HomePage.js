@@ -31,7 +31,8 @@ const Home = () => {
       try {
         const response = await fetch(
           // "https://jsonplaceholder.typicode.com/photos?_limit=5"
-          "http://localhost:5000/blogs/?_limit=5"
+          // "http://localhost:5000/blogs/?_limit=5"
+          "https://awared.onrender.com/blogs/?_limit=5"
         );
         const data = await response.json();
         setTrendingIssues(data);

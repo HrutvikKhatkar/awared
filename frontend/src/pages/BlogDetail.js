@@ -69,9 +69,11 @@ const BlogDetail = () => {
           </li>
         ))}
       </ul>
-      <Link to="/">
-        <button className="back-button">Back to Home</button>
-      </Link>
+      <div className="dash-container">
+        <Link to="/">
+            <button className="dashboard-button">Back</button>
+        </Link>
+      </div>
     </div>
   );
 };
